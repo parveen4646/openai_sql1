@@ -42,9 +42,9 @@ def home():
         logging.info(f'result{result}')
         print(result)
 
-        return render_template('result.html', input_data=input_data, result=result)
+        return render_template('index.html', input_data=input_data, result=result)
     else:
-        return render_template('result.html')
+        return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
